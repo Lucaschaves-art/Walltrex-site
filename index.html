@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walltrex FPS</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Walltrex FPS</div>
+    <nav>
+      <button class="btn" onclick="openModal('login')">Login</button>
+      <button class="btn btn-red" onclick="openModal('register')">Criar Conta</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Domine o campo de batalha</h1>
+      <p>Patentes, clãs, eventos e mais. Bem-vindo ao mundo de Walltrex.</p>
+      <div>
+        <button class="btn">Download</button>
+        <button class="btn">Loja</button>
+      </div>
+    </section>
+
+    <section class="info">
+      <h2>Patentes</h2>
+      <p>Suba de nível e desbloqueie títulos, armas e insígnias exclusivas.</p>
+
+      <h2>Modos de Jogo</h2>
+      <ul>
+        <li>Padrão - Clássico com bombas</li>
+        <li>Faca - Corpo a corpo</li>
+        <li>Sniper - Precisão total</li>
+      </ul>
+
+      <h2>Clãs</h2>
+      <p>Crie ou entre em um clã com até 100 membros.</p>
+
+      <h2>Game Pass</h2>
+      <p>Recompensas sazonais com vantagens exclusivas.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Siga-nos nas redes sociais</p>
+    <div class="social-icons">
+      <i class="fab fa-discord"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+    <p>&copy; 2025 Walltrex FPS</p>
+  </footer>
+
+  <!-- Modal de Login -->
+  <div id="modal-login" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('login')">&times;</span>
+      <h2>Login</h2>
+      <input type="text" placeholder="Usuário">
+      <input type="password" placeholder="Senha">
+      <button class="btn btn-red">Entrar</button>
+    </div>
+  </div>
+
+  <!-- Modal de Cadastro -->
+  <div id="modal-register" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('register')">&times;</span>
+      <h2>Criar Conta</h2>
+      <input type="text" placeholder="Usuário">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Senha">
+      <button class="btn btn-red">Registrar</button>
+    </div>
+  </div>
+</body>
+</html>
